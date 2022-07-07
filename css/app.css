@@ -1,6 +1,7 @@
 body {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
+  background-color: #dcdcdc;
 }
 
 html {
@@ -118,4 +119,37 @@ html {
   text-decoration: none;
   font-size: 1.7rem;
   font-family: "Poppins", serif;
+}
+
+.home {
+  min-height: 100vh;
+}
+
+.about__title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.about__text {
+  font-size: 14px;
+}
+
+.projects {
+  /* &__image{
+        max-width: 540px;
+    } */
+}
+
+.projects__title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.projects__stack p {
+  font-size: 13px;
+}
+
+.skills__title {
+  font-size: 25px;
+  font-weight: 700;
 }

@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/app.css">
     <title>Portfolio</title>
 </head>
-<body class="bg-dark">
-    <nav id="nav">
+<body class="">
+    <!-- <nav id="nav">
         <label>
             <input type="checkbox"></input>
             <span class="menu">
@@ -33,7 +33,93 @@
               </li>
             </ul>
         </label>
+    </nav> -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </nav>
+    
+    <section class="home">
+    </section>
+
+    <section class="about row">
+      <div class="about__container col-7 mx-auto">
+        <p class="about__title">about me</p>
+        <p class="about__text">I'm 21 years old. I'm a Front End Developer and I've recently studied Graphic Design in college.
+        <br>
+        My two year academic experience in design developed in me a highly meticulous sense of aesthetic, along with an exceedingly close attention to detail, which is distinctly reflected on my development projects. I'm looking forward to taking my very fist steps in the IT professional world, so I can increase my knowledge by learning as much as possible in a professional environment.
+        </p>
+      </div>
+    </section>
+    <section class="projects row mt-5">
+      <div class="projects__intro col-7 mx-auto mb-3">
+        <p class="projects__title">Featured Projects</p>
+        <p>descripción pequeña</p>
+      </div>
+      <div class="projects__display col-7 mx-auto">
+        <div class="d-flex align-items-center">
+          <div class="projects__blockInfo">
+            <p>E-commerce</p>
+            <p>Unfamiliar</p>
+            <p class="bg-light">Clothing e-commerce project. Fully responsive made with Bootstrap, SCSS and Javascript for the shopping cart. Every product is brought from a JSON file that simulates an API. GIT was used for version control.</p>
+            <div class="projects__stack d-flex">
+              <p class="">HTML</p>
+              <p class="ps-3">CSS</p>
+              <p class="ps-3">Javascript</p>
+              <p class="ps-3">Bootstrap</p>
+            </div>
+          </div>
+          <div class="projects__blockI">
+            <img class="projects__image img-fluid" src="media/unfamiliarHome.png" alt="Unfamiliar Home">
+          </div>
+        </div>
+      </div>
+      <div class="projects__display col-7 mx-auto mt-5 text-end">
+        <div class="d-flex align-items-center">
+          <div class="projects__blockI">
+            <img class="projects__image img-fluid" src="media/aviel.jpg" alt="Aviel Home">
+          </div>
+          <div class="projects__blockInfo">
+            <p>Design Agency</p>
+            <p>Aviel</p>
+            <p class="bg-light">Design Agency project. Fully responsive layout made with SCSS and user interactions made with Javascript. It was managed using GIT for version control and it was deployed in a public GitHub repository.</p>
+            <div class="projects__stack d-flex justify-content-end text-end">
+              <p class="pe-3">HTML</p>
+              <p class="pe-3">CSS</p>
+              <p class="pe-3">Javascript</p>
+              <p class="">Bootstrap</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills row">
+      <div class="skills__container col-7 mx-auto">
+        <p class="skills__title">skills</p>
+        <p>Languages and tools</p>
+      </div>
+    </section>
+
     <!-- particles.js container -->
     <!-- <div   id="particles-js"></div> -->
 

@@ -1,0 +1,9 @@
+.about{
+    &__title{
+        font-size: $fsTitle;
+        font-weight: $fwTitle;
+    }
+    &__text{
+        font-size: $fsText;
+    }
+}

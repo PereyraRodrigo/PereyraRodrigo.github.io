@@ -1,0 +1,14 @@
+.projects{
+    &__title{
+        font-size: $fsTitle;
+        font-weight: $fwTitle;
+    }
+    &__stack{
+        p{
+            font-size: 13px;
+        }
+    }
+    /* &__image{
+        max-width: 540px;
+    } */
+}
