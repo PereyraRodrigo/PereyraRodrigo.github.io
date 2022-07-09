@@ -10,3 +10,13 @@ html {
 /* *{
     outline: 1px solid #ff009926;
 } */
+#site-header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+#site-header.hide {
+top: -56px;
+}

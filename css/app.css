@@ -12,6 +12,18 @@ html {
 /* *{
     outline: 1px solid #ff009926;
 } */
+#site-header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+#site-header.hide {
+  top: -56px;
+}
+
 /* ---- particles.js container ---- */
 #particles-js {
   position: absolute;
@@ -24,12 +36,28 @@ html {
   background-position: 50% 50%;
 }
 
+#particle {
+  background-color: #e4e4e4;
+  /* position: fixed; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#overlay {
+  position: relative;
+}
+
 #nav {
   overflow-x: hidden;
 }
 
 #nav label .menu {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   right: -100px;
   top: -100px;
   z-index: 100;
@@ -44,6 +72,7 @@ html {
 
 #nav label .hamburger {
   position: absolute;
+  /* position: fixed; */
   top: 135px;
   left: 50px;
   width: 30px;
@@ -101,12 +130,14 @@ html {
 
 #nav label ul {
   z-index: 200;
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: 0.5s 0s ease-in-out;
+  /* transition: 0.5s 0s ease-in-out; */
+  transition: 0.6s 0s ease-in-out;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -135,6 +166,7 @@ html {
 }
 
 .projects {
+  background: #f3f4f5;
   /* &__image{
         max-width: 540px;
     } */
@@ -149,7 +181,130 @@ html {
   font-size: 13px;
 }
 
+.skills {
+  height: 70vh;
+}
+
 .skills__title {
   font-size: 25px;
   font-weight: 700;
+}
+
+.skills i {
+  font-size: 85px;
+}
+
+.skills__container {
+  flex-wrap: wrap;
+}
+
+.skills__container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills__iconContainers {
+  text-align: center;
+}
+
+.skills__iconContainers:hover {
+  color: #8b72af;
+}
+
+.skills__iconContainers p {
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.footer {
+  position: relative;
+  height: 25vh;
+  text-align: center;
+  background-color: white;
+}
+
+.footer a {
+  margin: 0 13px;
+}
+
+.footer p {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 17px;
+}
+
+.logos {
+  width: 43px;
+}
+
+.logos:hover {
+  filter: invert(48%) sepia(30%) saturate(600%) hue-rotate(223deg) brightness(94%) contrast(84%);
+}
+
+.linkedin {
+  width: 55px;
+}
+
+.github {
+  width: 48px;
+}
+
+/* Animation */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .footer {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
 }

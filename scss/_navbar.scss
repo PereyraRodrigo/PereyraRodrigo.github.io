@@ -5,7 +5,8 @@ $navFontSize: 1.7rem;
     overflow-x: hidden;
     label {
       .menu {
-        position: absolute;
+        /* position: absolute; */
+        position: fixed;
         right: -100px;
         top: -100px;
         z-index: 100;
@@ -19,6 +20,7 @@ $navFontSize: 1.7rem;
       }
       .hamburger {
         position: absolute;
+        /* position: fixed; */
         top: 135px;
         left: 50px;
         width: 30px;
@@ -69,12 +71,14 @@ $navFontSize: 1.7rem;
     
       ul {
         z-index: 200;
-        position: absolute;
+        /* position: absolute; */
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: 0;
-        transition: 0.5s 0s ease-in-out;
+        /* transition: 0.5s 0s ease-in-out; */
+        transition: 0.6s 0s ease-in-out;
         list-style-type: none;
         margin: 0;
         padding: 0;
