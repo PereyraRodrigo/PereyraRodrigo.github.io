@@ -13,6 +13,7 @@
 </head>
 
 <body class="">
+  
   <nav id="nav" class="d-md-none">
     <label>
       <input type="checkbox"></input>
@@ -64,7 +65,7 @@
     </div>
   </nav>
 
-  <!-- <div id="particle"></div> --> <!--Particles.js-->
+  <div id="particle"></div> <!--Particles.js-->
   <section id="overlay" class="home"><!--"overlay" particles.js-->
     <p>HI</p>
   </section>
@@ -136,10 +137,10 @@
   <!--Wave svg End-->
   
   <section class="skills row">
-    <div class="col-7 mx-auto">
+    <div class="skills__block col-7 mx-auto">
       <p class="skills__title">skills</p>
       <p>Languages and tools</p>
-      <div class="skills__container d-flex justify-content-center">
+      <div class="skills__container d-flex justify-content-center mx-auto col-lg-8">
         <div class="skills__iconContainers">
           <i class="devicon-html5-plain"></i>
           <p>HTML</p>
@@ -217,11 +218,12 @@
     </div>
   </footer>  
   <!--Footer end-->
-
+  <span class="cursor"></span>
   <!-- particles.js lib -->
   <script src="js/particles.min.js"></script>
-    <script src="js/particles.js"></script>
+  <script src="js/particles.js"></script>
   <!-- particles.js lib -->
+  <script src="js/mouse.js"></script>
   <script src="js/shownavbar.js"></script>
   <script src="bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
 </body>

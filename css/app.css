@@ -1,12 +1,13 @@
 body {
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #dcdcdc;
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   overflow-x: hidden;
+  cursor: none !important;
 }
 
 /* *{
@@ -22,6 +23,19 @@ html {
 
 #site-header.hide {
   top: -56px;
+}
+
+.cursor {
+  position: fixed;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1.9px solid black;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  right: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  pointer-events: none;
 }
 
 /* ---- particles.js container ---- */
@@ -152,6 +166,82 @@ html {
   font-family: "Poppins", serif;
 }
 
+.menu-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.menu-icon .menu-icon__cheeckbox {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-touch-callout: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.menu-icon div {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 22px;
+  height: 12px;
+}
+
+.menu-icon span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--bar-bg, #000);
+  border-radius: 1px;
+  transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+}
+
+.menu-icon span:first-of-type {
+  top: 0;
+}
+
+.menu-icon span:last-of-type {
+  bottom: 0;
+}
+
+.menu-icon.active span:first-of-type,
+.menu-icon .menu-icon__cheeckbox:checked + div span:first-of-type {
+  transform: rotate(45deg);
+  top: 5px;
+}
+
+.menu-icon.active span:last-of-type,
+.menu-icon .menu-icon__cheeckbox:checked + div span:last-of-type {
+  transform: rotate(-45deg);
+  bottom: 5px;
+}
+
+.menu-icon.active:hover span:first-of-type,
+.menu-icon.active:hover span:last-of-type,
+.menu-icon:hover .menu-icon__cheeckbox:checked + div span:first-of-type,
+.menu-icon:hover .menu-icon__cheeckbox:checked + div span:last-of-type {
+  width: 22px;
+}
+
+@media (min-width: 1024px) {
+  .menu-icon:hover span:first-of-type {
+    width: 26px;
+  }
+  .menu-icon:hover span:last-of-type {
+    width: 12px;
+  }
+}
+
 .home {
   min-height: 100vh;
 }
@@ -182,7 +272,11 @@ html {
 }
 
 .skills {
-  height: 70vh;
+  min-height: 390px;
+}
+
+.skills__block {
+  margin-top: -80px;
 }
 
 .skills__title {
@@ -196,6 +290,8 @@ html {
 
 .skills__container {
   flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 50px;
 }
 
 .skills__container div {
@@ -216,6 +312,18 @@ html {
   font-size: 13px;
   margin-top: 4px;
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .skills__block {
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 396px) {
+  .skills__container {
+    column-gap: 10px;
+  }
 }
 
 .waves {
@@ -246,6 +354,7 @@ html {
 }
 
 .logos {
+  cursor: none;
   width: 43px;
 }
 

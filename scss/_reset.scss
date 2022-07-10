@@ -1,22 +1,36 @@
-body{
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    background-color: #dcdcdc;
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: #dcdcdc;
 }
 html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+  overflow-x: hidden;
+  cursor: none !important;
 }
 /* *{
     outline: 1px solid #ff009926;
 } */
 #site-header {
-    top: 0;
-    width: 100%;
-    position: fixed;
-    transition: all 0.3s ease;
-    z-index: 100;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  transition: all 0.3s ease;
+  z-index: 100;
 }
 #site-header.hide {
-top: -56px;
+  top: -56px;
+}
+.cursor {
+  position: fixed;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1.9px solid black;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  right: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease, border-color 0.2s ease,
+  background-color 0.2s ease;
+  pointer-events: none;
 }
