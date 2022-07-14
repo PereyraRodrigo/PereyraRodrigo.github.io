@@ -1,6 +1,9 @@
 $mainColor: #8b72af; //temp main color
+$filterMainColor: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%); //black svgs to $mainColor
 
 $fsTitle: 25px; //font-size titles
 $fwTitle: 700; //font-weight titles
 
 $fsText: 14px; //font-size text
+
+$textAlign: center; //text-align titles and subtitles

@@ -16,7 +16,7 @@
     margin: 0 13px;
   }
   p{
-    font-size: 32px;
+    font-size: $fsTitle;
     font-weight: 500;
     margin-bottom: 17px;
   }
@@ -25,7 +25,7 @@
   cursor: none;
   width: 43px;
   &:hover{
-    filter: invert(48%) sepia(30%) saturate(600%) hue-rotate(223deg) brightness(94%) contrast(84%);;
+    filter: $filterMainColor;
   }
 }
 .linkedin{

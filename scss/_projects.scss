@@ -1,5 +1,8 @@
 .projects{
     background: #f3f4f5; 
+    &__intro{
+        text-align: $textAlign;
+    }
     &__title{
         font-size: $fsTitle;
         font-weight: $fwTitle;
