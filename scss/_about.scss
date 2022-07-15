@@ -22,8 +22,6 @@ $color : $mainColor;
     border: $thick solid transparent;
     position: relative;
     font-size: 1.15em;
-    // cursor: pointer;
-    cursor: none;
     letter-spacing: 0.07em;
     &:hover{
         color: $mainColor;

@@ -6,7 +6,7 @@ body {
 }
 
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   overflow-x: hidden;
   cursor: none !important;
 }
@@ -277,7 +277,6 @@ header a:hover {
   border: 3px solid transparent;
   position: relative;
   font-size: 1.15em;
-  cursor: none;
   letter-spacing: 0.07em;
 }
 
@@ -393,9 +392,6 @@ header a:hover {
 
 .projects {
   background: #f3f4f5;
-  /* &__image{
-        max-width: 540px;
-    } */
 }
 
 .projects__intro {
@@ -419,8 +415,126 @@ header a:hover {
   font-weight: 700;
 }
 
+.projects__text {
+  max-width: 520px;
+}
+
+.projects__text--pr {
+  padding-right: 10%;
+}
+
+.projects__text--pl {
+  padding-left: 10%;
+}
+
 .projects__stack p {
   font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.projects__stack p:hover {
+  color: #8b72af;
+}
+
+.projects__blockInfo--selfEnd {
+  align-self: flex-end;
+}
+
+.projects__blockImg {
+  position: relative;
+}
+
+.projects__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 2%;
+  background-color: #0009;
+  backdrop-filter: blur(0.08rem);
+}
+
+.projects__overlay img {
+  max-width: 38px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(76deg) brightness(104%) contrast(101%);
+}
+
+.projects__overlay img:hover {
+  filter: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%);
+  cursor: pointer;
+}
+
+.projects__eye {
+  position: absolute;
+  top: 42%;
+  left: 37%;
+}
+
+.projects__github {
+  position: absolute;
+  top: 42%;
+  left: 54%;
+  width: 37px;
+}
+
+.projects__image {
+  max-width: 529px;
+  border-radius: 2%;
+}
+
+.projects__bothBlocks {
+  display: flex;
+  align-items: center;
+}
+
+.projects__blockImg:hover .projects__overlay {
+  opacity: 1;
+}
+
+.projects__blockImg:hover .projects__overlay--blackBg {
+  cursor: initial;
+}
+
+@media (max-width: 1330px) {
+  .projects__image {
+    width: 100%;
+  }
+  .projects__text {
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .projects__bothBlocks {
+    flex-direction: column;
+  }
+  .projects__bothBlocks--reverse {
+    flex-direction: column-reverse;
+  }
+  .projects__image {
+    max-width: 529px;
+  }
+  .projects__text {
+    max-width: 520px;
+  }
+  .projects__stack p {
+    margin-bottom: 1rem;
+  }
+  .projects__blockInfo--selfEnd {
+    align-self: unset;
+  }
+  .projects__text--pr {
+    padding-right: unset;
+  }
+  .projects__text--pl {
+    padding-left: unset;
+  }
 }
 
 .skills {
@@ -507,7 +621,6 @@ header a:hover {
 }
 
 .logos {
-  cursor: none;
   width: 43px;
 }
 

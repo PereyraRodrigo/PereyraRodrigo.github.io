@@ -17,12 +17,118 @@
         font-size: 25px;
         font-weight: $fwTitle;
     }
+    &__text{
+        max-width: 520px;
+        &--pr{
+            padding-right: 10%;
+        }
+        &--pl{
+            padding-left: 10%;
+        }
+    }
     &__stack{
         p{
             font-size: 13px;
+            font-weight: 300;
+            margin-bottom: 0;
+            &:hover{
+                color: $mainColor;
+            }
         }
     }
-    /* &__image{
-        max-width: 540px;
-    } */
+    &__blockInfo--selfEnd{
+        align-self: flex-end;
+    }
+    &__blockImg{
+        position: relative;
+    }
+    &__overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        border-radius: 2%;
+        background-color: #0009;
+        backdrop-filter: blur(0.08rem);
+        img{
+            max-width: 38px;
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(76deg) brightness(104%) contrast(101%);
+            &:hover{
+                filter: $filterMainColor;
+                cursor: pointer;
+            }
+        }
+    }
+    &__eye{
+        position: absolute;
+        top: 42%;
+        left: 37%;
+    }
+    &__github{
+        position: absolute;
+        top: 42%;
+        left: 54%;
+        width: 37px;
+    }
+    &__image{
+        max-width: 529px;
+        border-radius: 2%;
+    }
+    &__bothBlocks{
+        display: flex;
+        align-items: center;
+    }
+}
+.projects__blockImg:hover .projects__overlay{
+    opacity: 1;
+}
+.projects__blockImg:hover .projects__overlay--blackBg{
+    cursor: initial;
+}
+@media (max-width: 1330px){
+    .projects{        
+        &__image{
+            width: 100%;
+        }
+        &__text{
+            max-width: 240px;
+        }
+    }
+}
+@media (max-width: 1100px){
+    .projects{
+        &__bothBlocks{
+            flex-direction: column;
+        }
+        &__bothBlocks--reverse{
+            flex-direction: column-reverse;
+        }
+        &__image{
+            max-width: 529px;
+        }
+        &__text{
+            max-width: 520px;
+        }
+        &__stack{
+            p{
+                margin-bottom: 1rem;
+            }
+        }
+        &__blockInfo--selfEnd{
+            align-self: unset;
+        }
+        &__text{
+            &--pr{
+                padding-right: unset;
+            }
+            &--pl{
+                padding-left: unset;
+            }
+        }
+    }
 }

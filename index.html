@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
-  <link rel="shortcut icon" href="#">
+  <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/app.css">
-  <title>Portfolio</title>
+  <title>Rodrigo Pereyra</title>
 </head>
 
 <body class="">
@@ -85,43 +85,72 @@
   <section id="projects" class="projects row py-5">
     <div class="projects__intro col-7 mx-auto mb-3">
       <p class="projects__title">Featured Projects</p>
-      <p>descripción pequeña</p>
     </div>
-    <div class="projects__display col-7 mx-auto">
-      <div class="d-flex align-items-center">
-        <div class="projects__blockInfo">
+    <div class="projects__display col-7 mx-auto mb-5">
+      <div class="projects__bothBlocks">
+        <div class="projects__blockInfo projects__blockInfo--selfEnd">
           <p class="projects__type">E-commerce</p>
           <p class="projects__name">Unfamiliar</p>
-          <p class="bg-light">Clothing e-commerce project. Fully responsive made with Bootstrap, SCSS and Javascript for
+          <p class="projects__text projects__text--pr">Fully responsive made with Bootstrap, SCSS and Javascript for
             the shopping cart. Every product is brought from a JSON file that simulates an API. GIT was used for version
             control.</p>
           <div class="projects__stack d-flex">
             <p>HTML</p>
-            <p class="ps-3">CSS</p>
+            <p class="ps-3">SCSS</p>
             <p class="ps-3">Javascript</p>
             <p class="ps-3">Bootstrap</p>
           </div>
         </div>
-        <div class="projects__blockI">
+        <div class="projects__blockImg">
           <img class="projects__image img-fluid" src="media/unfamiliarHome.png" alt="Unfamiliar Home">
+          <div class="projects__overlay">
+            <a href="https://unfamiliar.netlify.app/" target="_blank" rel="noreferrer"><img class="projects__eye" src="media/eye.svg" alt="See Website"></a>
+            <a href="https://github.com/PereyraRodrigo/Unfamiliar" target="_blank" rel="noreferrer"><img class="projects__github" src="media/github.svg" alt="See repository"></a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="projects__display col-7 mx-auto mt-5 text-end">
-      <div class="d-flex align-items-center">
-        <div class="projects__blockI">
+    <div class="projects__display col-7 mx-auto my-4 text-end">
+      <div class="projects__bothBlocks projects__bothBlocks--reverse">
+        <div class="projects__blockImg">
           <img class="projects__image img-fluid" src="media/aviel.jpg" alt="Aviel Home">
+          <div class="projects__overlay">
+            <a href="https://pereyrarodrigo.github.io/Aviel" target="_blank" rel="noreferrer"><img class="projects__eye" src="media/eye.svg" alt="See Website"></a>
+            <a href="https://github.com/PereyraRodrigo/Aviel" target="_blank" rel="noreferrer"><img class="projects__github" src="media/github.svg" alt="See repository"></a>
+          </div>
         </div>
         <div class="projects__blockInfo">
           <p class="projects__type">Design Agency</p>
           <p class="projects__name">Aviel</p>
-          <p class="bg-light">Design Agency project. Fully responsive layout made with SCSS and user interactions made
+          <p class="projects__text projects__text--pl">My first project. Fully responsive layout made with SCSS and user interactions made
             with Javascript. It was managed using GIT for version control and it was deployed in a public GitHub
             repository.</p>
           <div class="projects__stack d-flex justify-content-end text-end">
             <p class="pe-3">HTML</p>
-            <p class="pe-3">CSS</p>
+            <p class="pe-3">SCSS</p>
             <p>Javascript</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects__display col-7 mx-auto mt-5">
+      <div class="projects__bothBlocks">
+        <div class="projects__blockInfo projects__blockInfo--selfEnd">
+          <p class="projects__type">Football Scouting Agency</p>
+          <p class="projects__name">FG Sport</p>
+          <p class="projects__text projects__text--pr">My second freelance project. Our team was formed by an interdisciplinary group of professionals: two Developers, one UX/UI Designer and one Community Manager. Fully responsive layout made with SCSS, Bootstrap and Javascript. GIT was used for version control between developers.</p>
+          <div class="projects__stack d-flex">
+            <p>HTML</p>
+            <p class="ps-3">SCSS</p>
+            <p class="ps-3">Javascript</p>
+            <p class="ps-3">Bootstrap</p>
+          </div>
+        </div>
+        <div class="projects__blockImg">
+          <img class="projects__image img-fluid" src="media/fgsporthome.jpg" alt="Fg sports Home">
+          <div class="projects__overlay projects__overlay--blackBg">
+            <a href="https://fgsports.netlify.app/" target="_blank" rel="noreferrer"><img class="projects__eye" src="media/eye.svg" alt="See Website"></a>
+            <a href="https://github.com/PereyraRodrigo/fg-sport" target="_blank" rel="noreferrer"><img class="projects__github" src="media/github.svg" alt="See repository"></a>
           </div>
         </div>
       </div>
@@ -133,8 +162,7 @@
   
   <section id="skills" class="skills row">
     <div class="skills__block col-7 mx-auto">
-      <p class="skills__title">skills</p>
-      <p>Languages and tools</p>
+      <p class="skills__title mb-5">Skills</p>
       <div class="skills__container d-flex justify-content-center mx-auto col-lg-8">
         <div class="skills__iconContainers">
           <i class="devicon-html5-plain"></i>
