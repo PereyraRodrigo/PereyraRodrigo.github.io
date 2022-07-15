@@ -276,7 +276,7 @@ header a:hover {
   display: inline-block;
   border: 3px solid transparent;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.15em;
   cursor: none;
   letter-spacing: 0.07em;
 }
@@ -403,6 +403,18 @@ header a:hover {
 }
 
 .projects__title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.projects__type {
+  color: #8b72af;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.projects__name {
   font-size: 25px;
   font-weight: 700;
 }
