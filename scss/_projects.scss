@@ -1,5 +1,6 @@
 .projects{
     background: #f3f4f5; 
+    margin-top: -80px;
     &__intro{
         text-align: $textAlign;
     }
@@ -130,5 +131,10 @@
                 padding-left: unset;
             }
         }
+    }
+}
+@media (max-width: 768px){
+    .projects{
+        margin-top: -20px;
     }
 }

@@ -259,6 +259,10 @@ header a:hover {
   min-height: 100vh;
 }
 
+.about {
+  margin-bottom: -80px;
+}
+
 .about__title {
   font-size: 25px;
   font-weight: 700;
@@ -267,6 +271,16 @@ header a:hover {
 
 .about__text {
   font-size: 14px;
+  text-align: justify;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+  .about {
+    margin-bottom: -20px;
+  }
 }
 
 .resumebutton a {
@@ -392,6 +406,7 @@ header a:hover {
 
 .projects {
   background: #f3f4f5;
+  margin-top: -80px;
 }
 
 .projects__intro {
@@ -534,6 +549,12 @@ header a:hover {
   }
   .projects__text--pl {
     padding-left: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    margin-top: -20px;
   }
 }
 
