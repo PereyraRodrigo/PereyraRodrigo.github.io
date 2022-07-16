@@ -86,10 +86,8 @@
     }
 }
 .projects__blockImg:hover .projects__overlay{
-    opacity: 1;
-}
-.projects__blockImg:hover .projects__overlay--blackBg{
     cursor: initial;
+    opacity: 1;
 }
 @media (max-width: 1330px){
     .projects{        

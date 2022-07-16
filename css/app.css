@@ -259,6 +259,32 @@ header a:hover {
   min-height: 100vh;
 }
 
+.home__block {
+  margin: auto;
+  margin-top: 16%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__text {
+  font-size: 55px;
+}
+
+.home__text--FrontDev {
+  color: #8b72af;
+}
+
+.home__logo {
+  margin-right: 60px;
+  width: 240px;
+  max-width: 240px;
+  transition: all 0.25s linear;
+}
+
+.home__logo:hover {
+  filter: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%);
+}
+
 .about {
   margin-bottom: -80px;
 }
@@ -509,11 +535,8 @@ header a:hover {
 }
 
 .projects__blockImg:hover .projects__overlay {
-  opacity: 1;
-}
-
-.projects__blockImg:hover .projects__overlay--blackBg {
   cursor: initial;
+  opacity: 1;
 }
 
 @media (max-width: 1330px) {
