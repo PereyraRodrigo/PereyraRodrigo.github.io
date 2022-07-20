@@ -38,7 +38,7 @@
   </nav> 
 
   <div id="site-header" class="d-none d-md-block navi fixed-top container-fluid">
-    <header class="container col-7 px-0">
+    <header class="container col-5 px-0">
       <div class="logo">
         <a href="#home"><img src="media/templogo.svg" alt="Temp Logo"></a>
       </div>
@@ -51,11 +51,11 @@
     </header>
   </div>
 
-  <div id="particle"></div> <!--Particles.js-->
+  <!-- <div id="particle"></div> --> <!--Particles.js-->
   <!--"overlay" particles.js-->
   <section id="overlay" class="home">    
-      <div class="row">
-        <div class="col-7 home__block">
+      <div id="home" class="row">
+        <div class="col-5 home__block">
           <div>
             <p class="home__text mb-0">Hello,
               <br>
@@ -68,8 +68,32 @@
       </div>
   </section>
 
+  <section class="row">
+    <div class="experience col-5 mx-auto">
+      <div class="experience__textHolder">
+        <p class="experience__title pt-4">Experience</p>
+      </div>
+      <div class="experience__container">        
+          <div id='educationTitle' onclick="showEducation()" class="experience__iconNtitle d-flex align-items-center" style="color: rgb(139, 114, 175);">
+            <img id="educationIcon" src="media/education.svg" alt="Education Icon" style="filter: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%);">
+            <p>Education</p> 
+          </div>
+          <div id='workTitle' onclick="showWork()" class="experience__iconNtitle d-flex align-items-center">
+            <img id="workIcon" src="media/laptop.svg" alt="Work Icon">
+            <p>Work</p>        
+          </div>     
+      </div>
+      <p id="educationTimeline">
+        Education timeline WIP
+      </p>
+      <p id="workTimeline">
+        Work timeline WIP
+      </p>
+    </div>
+  </section>
+
   <section id="about" class="about row mt-3 pt-5">
-    <div class="about__container col-7 mx-auto">
+    <div class="about__container col-5 mx-auto">
       <p class="about__title">About Me</p>
     <p class="about__text">I'm 22 years old. I'm a Front End Developer and I've recently studied <strong>Graphic Design</strong> in college.
       <br>
@@ -95,14 +119,12 @@
     <div class="projects__intro col-12 mx-auto mb-3">
       <p class="projects__title">Featured Projects</p>
     </div>
-    <div class="projects__display col-7 mx-auto mb-5">
+    <div class="projects__display col-5 mx-auto mb-5">
       <div class="projects__bothBlocks">
         <div class="projects__blockInfo projects__blockInfo--selfEnd">
           <p class="projects__type">E-commerce</p>
           <p class="projects__name">Unfamiliar</p>
-          <p class="projects__text projects__text--pr">Fully responsive made with Bootstrap, SCSS and Javascript for
-            the shopping cart. Every product is brought from a JSON file that simulates an API. GIT was used for version
-            control.</p>
+          <p class="projects__text projects__text--pr">Fully responsive layout made with Bootstrap, SCSS and Javascript for the shopping cart along with Local Storage. Every product is brought from a JSON file that simulates an API. GIT was used for version control.</p>
           <div class="projects__stack d-flex">
             <p>HTML</p>
             <p class="ps-3">SCSS</p>
@@ -120,7 +142,7 @@
       </div>
     </div>
     <div class="w-100"></div>
-    <div class="projects__display col-7 mx-auto my-4 text-end">
+    <div class="projects__display col-5 mx-auto my-4 text-end">
       <div class="projects__bothBlocks projects__bothBlocks--reverse">
         <div class="projects__blockImg">
           <img class="projects__image img-fluid" src="media/aviel.jpg" alt="Aviel Home">
@@ -132,9 +154,7 @@
         <div class="projects__blockInfo">
           <p class="projects__type">Design Agency</p>
           <p class="projects__name">Aviel</p>
-          <p class="projects__text projects__text--pl">My first project. Fully responsive layout made with SCSS and user interactions made
-            with Javascript. It was managed using GIT for version control and it was deployed in a public GitHub
-            repository.</p>
+          <p class="projects__text projects__text--pl">My first project. Fully responsive layout made with SCSS and user interactions made with Javascript. It was managed using GIT for version control and it was deployed in a public GitHub repository.</p>
           <div class="projects__stack d-flex justify-content-end text-end">
             <p class="pe-3">HTML</p>
             <p class="pe-3">SCSS</p>
@@ -144,7 +164,7 @@
       </div>
     </div>
     <div class="w-100"></div>
-    <div class="projects__display col-7 mx-auto mt-5">
+    <div class="projects__display col-5 mx-auto mt-5">
       <div class="projects__bothBlocks">
         <div class="projects__blockInfo projects__blockInfo--selfEnd">
           <p class="projects__type">Football Scouting Agency</p>
@@ -257,6 +277,7 @@
   <script src="js/particles.min.js"></script>
   <script src="js/particles.js"></script>
   <!-- particles.js lib -->
+  <script src="js/script.js"></script>
   <script src="js/mouse.js"></script>
   <script src="js/shownavbar.js"></script>
   <script src="bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>

@@ -93,6 +93,9 @@ $navFontSize: 1.7rem;
         text-decoration: none;
         font-size: $navFontSize;
         font-family: $navFont;
+        &:hover{
+          color: $mainColor;
+        }
       }
     }
     label ul {

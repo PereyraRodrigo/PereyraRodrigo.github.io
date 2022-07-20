@@ -169,6 +169,10 @@ html {
   font-family: "Poppins", serif;
 }
 
+#nav label a:hover {
+  color: #8b72af;
+}
+
 #nav label ul {
   visibility: hidden;
 }
@@ -275,7 +279,6 @@ header a:hover {
 }
 
 .home__logo {
-  margin-right: 60px;
   width: 240px;
   max-width: 240px;
   transition: all 0.25s linear;
@@ -283,6 +286,63 @@ header a:hover {
 
 .home__logo:hover {
   filter: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%);
+}
+
+.experience {
+  background-color: aliceblue;
+  border-radius: 3%;
+  min-height: 350px;
+}
+
+.experience__textHolder {
+  text-align: center;
+}
+
+.experience__title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.experience__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.experience__iconNtitle:hover {
+  color: #8b72af !important;
+  filter: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%);
+}
+
+.experience__iconNtitle p {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.experience__iconNtitle img {
+  width: 25px;
+  margin-right: 4px;
+}
+
+/* #educationTitle{
+    color: $mainColor;
+    filter: $filterMainColor;
+} */
+#educationTimeline {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #8b72af;
+  margin-top: 20px;
+  display: block;
+}
+
+#workTimeline {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: cyan;
+  margin-top: 20px;
+  display: none;
 }
 
 .about {
@@ -298,7 +358,6 @@ header a:hover {
 .about__text {
   font-size: 14px;
   text-align: justify;
-  max-width: 700px;
   margin: auto;
   margin-bottom: 15px;
 }
@@ -457,7 +516,7 @@ header a:hover {
 }
 
 .projects__text {
-  max-width: 520px;
+  /* max-width: 520px; */
 }
 
 .projects__text--pr {
@@ -525,13 +584,14 @@ header a:hover {
 }
 
 .projects__image {
-  max-width: 529px;
+  max-width: 390px;
   border-radius: 2%;
 }
 
 .projects__bothBlocks {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .projects__blockImg:hover .projects__overlay {
@@ -539,7 +599,7 @@ header a:hover {
   opacity: 1;
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 1538px) {
   .projects__image {
     width: 100%;
   }

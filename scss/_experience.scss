@@ -1,0 +1,50 @@
+.experience{
+    background-color: aliceblue;
+    border-radius: 3%;
+    min-height: 350px; //temp
+    &__textHolder{
+        text-align: $textAlign;
+    }
+    &__title{
+        font-size: $fsTitle;
+        font-weight: $fwTitle;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-around;      
+    }
+    &__iconNtitle{
+        &:hover{
+            color: $mainColor !important;
+            filter: $filterMainColor;
+        }
+        p{
+            margin-bottom: 0;   
+            font-size: 18px;         
+        } 
+        img{
+            width: 25px;
+            margin-right: 4px;
+        }
+    }
+}
+/* #educationTitle{
+    color: $mainColor;
+    filter: $filterMainColor;
+} */
+#educationTimeline {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: $mainColor;
+    margin-top: 20px;
+    display: block;    
+}
+#workTimeline {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: cyan;
+    margin-top: 20px;
+    display: none;
+}

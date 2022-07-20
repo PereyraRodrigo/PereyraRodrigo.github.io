@@ -19,7 +19,7 @@
         font-weight: $fwTitle;
     }
     &__text{
-        max-width: 520px;
+        /* max-width: 520px; */
         &--pr{
             padding-right: 10%;
         }
@@ -77,19 +77,21 @@
         width: 37px;
     }
     &__image{
-        max-width: 529px;
+        // max-width: 469px;
+        max-width: 390px;
         border-radius: 2%;
     }
     &__bothBlocks{
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 }
 .projects__blockImg:hover .projects__overlay{
     cursor: initial;
     opacity: 1;
 }
-@media (max-width: 1330px){
+@media (max-width: 1538px){
     .projects{        
         &__image{
             width: 100%;

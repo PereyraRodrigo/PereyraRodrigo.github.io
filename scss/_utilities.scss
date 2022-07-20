@@ -1,4 +1,6 @@
 $mainColor: #8b72af; //temp main color
+//also cambiar color Y filter en script.js
+//also cambiar style.color y .filter hardcodeado en "experience"
 $filterMainColor: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%); //black svgs to $mainColor
 
 $fsTitle: 25px; //font-size titles
