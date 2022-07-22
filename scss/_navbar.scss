@@ -107,7 +107,7 @@ $navFontSize: 1.7rem;
 }
 .nav-link{
   padding: 0 !important;
-  margin: .5rem 1rem !important;
+  margin: .5rem 1rem;
 }
 .navi{  
   /* background-color: rgba(255, 255, 255, 0.486); */
@@ -131,6 +131,7 @@ header{
   img{
     max-width: 47px;
     padding: 5px 0;
+    transition: $hoverTransition;
     &:hover{
       filter: $filterMainColor;
     }

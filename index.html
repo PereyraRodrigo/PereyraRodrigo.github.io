@@ -46,7 +46,7 @@
         <a href="#about" class="nav-link link link--metis">About me</a>
         <a href="#projects" class="nav-link link link--metis">Projects</a>
         <a href="#skills" class="nav-link link link--metis">Skills</a>
-        <a href="#footer" class="nav-link link link--metis">Contact</a>
+        <a href="#footer" class="nav-link link link--metis me-0">Contact</a>
       </nav>
     </header>
   </div>
@@ -68,31 +68,7 @@
       </div>
   </section>
 
-  <!-- <section class="row">
-    <div class="experience col-5 mx-auto">
-      <div class="experience__textHolder">
-        <p class="experience__title pt-4">Experience</p>
-      </div>
-      <div class="experience__container">        
-          <div id='educationTitle' onclick="showEducation()" class="experience__iconNtitle d-flex align-items-center" style="color: rgb(139, 114, 175);">
-            <img id="educationIcon" src="media/education.svg" alt="Education Icon" style="filter: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%);">
-            <p>Education</p> 
-          </div>
-          <div id='workTitle' onclick="showWork()" class="experience__iconNtitle d-flex align-items-center">
-            <img id="workIcon" src="media/laptop.svg" alt="Work Icon">
-            <p>Work</p>        
-          </div>     
-      </div>
-      <p id="educationTimeline">
-        Education timeline WIP
-      </p>
-      <p id="workTimeline">
-        Work timeline WIP
-      </p>
-    </div>
-  </section> -->
-
-  <section id="about" class="about row mt-3 pt-5">
+  <section id="about" class="about row my-5 pt-5">
     <div class="about__container col-5 mx-auto">
       <p class="about__title">About Me</p>
     <p class="about__text">I'm 22 years old. I'm a Front End Developer and I've recently studied <strong>Graphic Design</strong> in college.
@@ -112,6 +88,98 @@
       </div>
     </div>
   </section>
+
+  <section class="row">
+    <div class="experience col-5 mx-auto">
+      <div class="experience__textHolder">
+        <p class="experience__title pt-4">Experience</p>
+      </div>
+      <div class="experience__container">        
+          <div id='educationTitle' onclick="showEducation()" class="experience__iconNtitle d-flex align-items-center" style="color: rgb(139, 114, 175);">
+            <img id="educationIcon" src="media/education.svg" alt="Education Icon" style="filter: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%);">
+            <p>Education</p> 
+          </div>
+          <div id='workTitle' onclick="showWork()" class="experience__iconNtitle d-flex align-items-center">
+            <img id="workIcon" src="media/laptop.svg" alt="Work Icon">
+            <p>Work</p>        
+          </div>     
+      </div>
+      <div id="educationTimeline" class="containerTimeline">
+        <div class="timeline-block timeline-block-left">
+          <div class="marker"></div>
+          <div class="timeline-content">
+             <p>React Js</p>
+             <span>Coderhouse</span>
+             <p>Oct-Dec 2021</p>
+          </div>
+       </div>
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="timeline-content">
+             <p>Javascript</p>
+             <span>Coderhouse</span>
+             <p>Aug-Oct 2021</p>
+          </div>
+       </div>
+        <div class="timeline-block timeline-block-left">
+          <div class="marker"></div>
+          <div class="timeline-content">
+             <p>Web Development</p>
+             <span>Coderhouse</span>
+             <p>May-Jul 2021</p>
+          </div>
+       </div>
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="timeline-content">
+             <p>Graphic Design</p>
+             <span>Universidad de Morón</span>
+             <p>2018-2021</p>
+             <p class="timeline-text">Third and last year in college. I've completed 22 out of 33 subjects.</p>
+          </div>
+       </div>    
+       <div class="timeline-block timeline-block-left">
+          <div class="marker"></div>
+          <div class="timeline-content">
+             <p>English Cambridge Certificate</p>
+             <span>Private Institute</span>
+             <p>2008-2017</p>
+          </div>
+       </div>    
+       <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="timeline-content">
+             <p>Social Studies HS Degree</p>
+             <span>Private School</span>
+             <p>2011-2017</p>
+          </div>
+       </div>
+      </div>
+
+
+      <div id="workTimeline" class="containerTimeline containerTimeline--work">
+        <div class="timeline-block timeline-block-left">
+          <div class="marker"></div>
+          <div class="timeline-content">
+             <p>Fg Sport</p>
+             <span>Freelance Project</span>
+             <p>Jan-Mar 2022</p>             
+             <p class="timeline-text">This project was about a real football scouting agency that used Big Data and AI algorithms regarding players statistics. Our assignment as devs was to code our designer's web design layout. Our team was formed by four people: two Developers, one UX/UI Designer and one Community Manager. GIT was used for version control between developers.&lrm;</p>
+          </div>
+       </div>    
+       <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="timeline-content">
+             <p>Pico Rico</p>
+             <span>Freelance Project</span>
+             <p>Sep-Nov 2021</p>
+             <p class="timeline-text">This project was about a small business that produced healthy snacks such as dried fruits, nuts and seeds. This project was made between three people, one UX/UI Designer and two Developers. Our task as developers was to recreate the designer's wireframe. We used GIT for version control between developers.</p>
+          </div>
+       </div>
+      </div>
+    </div>
+  </section>
+  
   <!--Wave svg start-->
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,96L80,112C160,128,320,160,480,149.3C640,139,800,85,960,80C1120,75,1280,117,1360,138.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
   <!--Wave svg end-->
@@ -124,7 +192,7 @@
         <div class="projects__blockInfo projects__blockInfo--selfEnd">
           <p class="projects__type">E-commerce</p>
           <p class="projects__name">Unfamiliar</p>
-          <p class="projects__text projects__text--pr">Fully responsive layout made with Bootstrap, SCSS and Javascript for the shopping cart along with Local Storage. Every product is brought from a JSON file that simulates an API. GIT was used for version control.</p>
+          <p class="projects__text projects__text--pr">Fully responsive layout made with Bootstrap, SCSS and Javascript for the shopping cart along with the use of Local Storage. Every product is brought from a JSON file that simulates an API. GIT was used for version control.</p>
           <div class="projects__stack d-flex">
             <p>HTML</p>
             <p class="ps-3">SCSS</p>

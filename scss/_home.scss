@@ -15,7 +15,7 @@
     &__logo{
         width: 240px;
         max-width: 240px;
-        transition: all 0.25s linear;
+        transition: $hoverTransition;
         &:hover{
             filter: $filterMainColor;
         }

@@ -19,6 +19,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            transition: $hoverTransition;
         }
     }
     &__iconContainers{

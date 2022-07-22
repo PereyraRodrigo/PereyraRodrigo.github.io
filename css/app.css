@@ -183,7 +183,7 @@ html {
 
 .nav-link {
   padding: 0 !important;
-  margin: .5rem 1rem !important;
+  margin: .5rem 1rem;
 }
 
 .navi {
@@ -212,6 +212,7 @@ header nav {
 header img {
   max-width: 47px;
   padding: 5px 0;
+  transition: all 0.3s ease;
 }
 
 header img:hover {
@@ -281,7 +282,7 @@ header a:hover {
 .home__logo {
   width: 240px;
   max-width: 240px;
-  transition: all 0.25s linear;
+  transition: all 0.3s ease;
 }
 
 .home__logo:hover {
@@ -289,9 +290,9 @@ header a:hover {
 }
 
 .experience {
-  background-color: aliceblue;
+  background-color: #eee;
   border-radius: 3%;
-  min-height: 350px;
+  min-height: 755px;
 }
 
 .experience__textHolder {
@@ -323,30 +324,138 @@ header a:hover {
   margin-right: 4px;
 }
 
-/* #educationTitle{
-    color: $mainColor;
-    filter: $filterMainColor;
-} */
-#educationTimeline {
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: #8b72af;
-  margin-top: 20px;
-  display: block;
+@media screen and (max-width: 768px) {
+  .experience__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .experience__container div {
+    padding: 5px 0;
+  }
 }
 
-#workTimeline {
+/* #educationTimeline {
   width: 100%;
   padding: 50px 0;
   text-align: center;
-  background-color: cyan;
+  background-color: $mainColor;
   margin-top: 20px;
+  display: block;
+} */
+#workTimeline {
   display: none;
 }
 
+.containerTimeline {
+  width: 80%;
+  padding: 0 0;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  min-height: 423px;
+}
+
+.containerTimeline:before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 50%;
+  margin-left: -1px;
+  width: 1.5px;
+  height: 84%;
+  background: #c1c1c1;
+  z-index: 1;
+}
+
+.timeline-block {
+  width: calc(50% + 8px);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+}
+
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #f5f7fa;
+  background: #8b72af;
+  margin-top: 3px;
+  z-index: 1;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 15px;
+  color: #666;
+}
+
+.timeline-content p:nth-child(1) {
+  margin-bottom: -2px;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+}
+
+.timeline-content span {
+  font-size: 14px;
+  color: #666;
+}
+
+.timeline-content p {
+  font-size: 13px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: #888;
+  margin-bottom: 0;
+}
+
+#educationTimeline .timeline-content {
+  padding: 10px 15px;
+}
+
+#workTimeline .timeline-content p {
+  font-size: 13.5px;
+}
+
+.containerTimeline--work:before {
+  height: 51% !important;
+}
+
+.timeline-text {
+  color: #353232 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .containerTimeline:before {
+    left: 8px;
+    width: 2px;
+  }
+  .timeline-block {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .timeline-block-right {
+    float: none;
+  }
+  .timeline-block-left {
+    float: none;
+    direction: ltr;
+  }
+}
+
 .about {
-  margin-bottom: -80px;
+  /* margin-bottom: -80px; */
 }
 
 .about__title {
@@ -554,7 +663,7 @@ header a:hover {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: .5s ease-in-out;
   border-radius: 2%;
   background-color: #0009;
   backdrop-filter: blur(0.08rem);
@@ -563,6 +672,7 @@ header a:hover {
 .projects__overlay img {
   max-width: 38px;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(76deg) brightness(104%) contrast(101%);
+  transition: all 0.3s ease;
 }
 
 .projects__overlay img:hover {
@@ -669,6 +779,7 @@ header a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
 .skills__iconContainers {
@@ -726,6 +837,7 @@ header a:hover {
 
 .logos {
   width: 43px;
+  transition: all 0.3s ease;
 }
 
 .logos:hover {
