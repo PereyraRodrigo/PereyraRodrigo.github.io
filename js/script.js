@@ -1,3 +1,5 @@
+let mainColor = '#28e3c0'
+let filterMainColor = 'invert(74%) sepia(71%) saturate(464%) hue-rotate(108deg) brightness(91%) contrast(94%)'
 let eduTimeline = document.getElementById("educationTimeline");
 let workTimeline = document.getElementById("workTimeline");
 let eduTitle = document.getElementById('educationTitle')

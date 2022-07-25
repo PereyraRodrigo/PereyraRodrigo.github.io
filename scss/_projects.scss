@@ -1,6 +1,6 @@
 .projects{
-    background: #f3f4f5; 
-    margin-top: -80px;
+    background-color: #91919112;
+    // margin-top: -80px;
     &__intro{
         text-align: $textAlign;
     }
@@ -86,6 +86,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        background-color: #f7f7f7;
     }
 }
 .projects__blockImg:hover .projects__overlay{
@@ -132,10 +133,5 @@
                 padding-left: unset;
             }
         }
-    }
-}
-@media (max-width: 768px){
-    .projects{
-        margin-top: -20px;
     }
 }

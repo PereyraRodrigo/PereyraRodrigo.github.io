@@ -1,5 +1,9 @@
 .about{
   /* margin-bottom: -80px; */
+    &__container{
+      background-color: $bgColor;
+      border-radius: 3%;
+    }
     &__title{
         font-size: $fsTitle;
         font-weight: $fwTitle;
@@ -9,7 +13,8 @@
         font-size: $fsText;
         text-align: justify;
         margin: auto;
-        margin-bottom: 15px;      
+        margin-bottom: 15px;     
+        max-width: 90%; 
     }
 }
 @media(max-width:1000px){

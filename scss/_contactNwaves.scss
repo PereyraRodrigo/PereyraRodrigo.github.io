@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 15vh;
-  margin-bottom: -7px; /*Fix for safari gap*/
+  /* margin-bottom: -7px; */ /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
 }
@@ -11,7 +11,9 @@
   position: relative;
   height: 25vh;
   text-align: center;
-  background-color: white;
+  // background-color: $mainColor;
+  // background-color: #8b72afb3;
+  background-color: #91919157;
   a{
     margin: 0 13px;
   }
@@ -26,6 +28,7 @@
   transition: $hoverTransition;
   &:hover{
     filter: $filterMainColor;
+    /* filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(38deg) brightness(105%) contrast(101%); */
   }
 }
 .linkedin{

@@ -1,5 +1,5 @@
 .experience {
-  background-color: #eee;
+  background-color: $bgColor;
   border-radius: 3%;
   min-height: 755px; //temp
   &__textHolder {
@@ -38,14 +38,6 @@
         }
     }
 }
-/* #educationTimeline {
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: $mainColor;
-  margin-top: 20px;
-  display: block;
-} */
 #workTimeline {
   display: none;
 }
@@ -100,7 +92,7 @@
   color: #666;
   p:nth-child(1) {
       margin-bottom: -2px;
-      font-size: 15px;
+      font-size: 15px !important;
       font-weight: 500;
       color: black;
     }
@@ -116,11 +108,11 @@
     margin-bottom: 0;
   }
 }
-#educationTimeline{
+/* #educationTimeline{
     .timeline-content{
         padding: 10px 15px;
     }
-}
+} */
 #workTimeline{
     .timeline-content p{        
         font-size: 13.5px;

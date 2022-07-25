@@ -2,19 +2,22 @@
     min-height: 100vh;
     &__block{
         margin: auto;
-        margin-top: 16%;
+        margin-top: 19%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     &__text{
-        font-size: 55px;
+        font-size: 65px;
+        line-height: 72px;
+        font-weight: 300;
         &--FrontDev{
             color: $mainColor;
         }
     }
     &__logo{
-        width: 240px;
-        max-width: 240px;
+        width: 190px;
+        max-width: 190px;
         transition: $hoverTransition;
         &:hover{
             filter: $filterMainColor;

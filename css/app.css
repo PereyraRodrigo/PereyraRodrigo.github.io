@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Cormorant+Infant:wght@500&family=Kantumruy+Pro:wght@200&family=Libre+Caslon+Text&family=Livvic&family=Quando&family=Thasadith&display=swap");
 body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -41,21 +42,10 @@ html {
 }
 
 /* ---- particles.js container ---- */
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #dcdcdc;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
 #particle {
-  background-color: #e4e4e4;
-  /* position: fixed; */
-  position: absolute;
+  background-color: #fff;
+  position: fixed;
+  /* position: absolute; */
   top: 0;
   right: 0;
   bottom: 0;
@@ -266,13 +256,16 @@ header a:hover {
 
 .home__block {
   margin: auto;
-  margin-top: 16%;
+  margin-top: 19%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .home__text {
-  font-size: 55px;
+  font-size: 65px;
+  line-height: 72px;
+  font-weight: 300;
 }
 
 .home__text--FrontDev {
@@ -280,8 +273,8 @@ header a:hover {
 }
 
 .home__logo {
-  width: 240px;
-  max-width: 240px;
+  width: 190px;
+  max-width: 190px;
   transition: all 0.3s ease;
 }
 
@@ -290,7 +283,7 @@ header a:hover {
 }
 
 .experience {
-  background-color: #eee;
+  background-color: #fff;
   border-radius: 3%;
   min-height: 755px;
 }
@@ -335,14 +328,6 @@ header a:hover {
   }
 }
 
-/* #educationTimeline {
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: $mainColor;
-  margin-top: 20px;
-  display: block;
-} */
 #workTimeline {
   display: none;
 }
@@ -402,7 +387,7 @@ header a:hover {
 
 .timeline-content p:nth-child(1) {
   margin-bottom: -2px;
-  font-size: 15px;
+  font-size: 15px !important;
   font-weight: 500;
   color: black;
 }
@@ -420,10 +405,11 @@ header a:hover {
   margin-bottom: 0;
 }
 
-#educationTimeline .timeline-content {
-  padding: 10px 15px;
-}
-
+/* #educationTimeline{
+    .timeline-content{
+        padding: 10px 15px;
+    }
+} */
 #workTimeline .timeline-content p {
   font-size: 13.5px;
 }
@@ -458,6 +444,11 @@ header a:hover {
   /* margin-bottom: -80px; */
 }
 
+.about__container {
+  background-color: #fff;
+  border-radius: 3%;
+}
+
 .about__title {
   font-size: 25px;
   font-weight: 700;
@@ -469,6 +460,7 @@ header a:hover {
   text-align: justify;
   margin: auto;
   margin-bottom: 15px;
+  max-width: 90%;
 }
 
 @media (max-width: 1000px) {
@@ -599,8 +591,7 @@ header a:hover {
 }
 
 .projects {
-  background: #f3f4f5;
-  margin-top: -80px;
+  background-color: #91919112;
 }
 
 .projects__intro {
@@ -702,6 +693,7 @@ header a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #f7f7f7;
 }
 
 .projects__blockImg:hover .projects__overlay {
@@ -745,12 +737,6 @@ header a:hover {
   }
 }
 
-@media (max-width: 768px) {
-  .projects {
-    margin-top: -20px;
-  }
-}
-
 .skills {
   min-height: 390px;
   text-align: center;
@@ -773,6 +759,8 @@ header a:hover {
   flex-wrap: wrap;
   row-gap: 20px;
   column-gap: 50px;
+  background-color: #fff;
+  padding: 25px 0;
 }
 
 .skills__container div {
@@ -812,7 +800,7 @@ header a:hover {
   position: relative;
   width: 100%;
   height: 15vh;
-  margin-bottom: -7px;
+  /* margin-bottom: -7px; */
   /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
@@ -822,7 +810,7 @@ header a:hover {
   position: relative;
   height: 25vh;
   text-align: center;
-  background-color: white;
+  background-color: #91919157;
 }
 
 .footer a {
@@ -842,6 +830,7 @@ header a:hover {
 
 .logos:hover {
   filter: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%);
+  /* filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(38deg) brightness(105%) contrast(101%); */
 }
 
 .linkedin {
