@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Front End Developer Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
   <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/app.css">
   <title>Rodrigo Pereyra</title>
@@ -22,7 +24,7 @@
       </span>
       <ul>
         <li>
-          <a href="#about">About Me</a>
+          <a href="#about">About</a>
         </li>
         <li>
           <a href="#experience">Experience</a>
@@ -40,13 +42,13 @@
     </label>
   </nav> 
 
-  <div id="site-header" class="d-none d-md-block navi fixed-top container-fluid">
-    <header class="container col-5 px-0">
+  <div id="site-header" class="d-none d-md-block navi fixed-top container-fluid animate__animated animate__fadeIn animate__slower">
+    <header class="container col-10 col-md-5 px-0">
       <div class="logo">
         <a href="#home"><img src="media/templogo.svg" alt="Temp Logo"></a>
       </div>
       <nav>
-        <a href="#about" class="nav-link link link--metis">About me</a>
+        <a href="#about" class="nav-link link link--metis">About</a>
         <a href="#experience" class="nav-link link link--metis">Experience</a>
         <a href="#projects" class="nav-link link link--metis">Projects</a>
         <a href="#skills" class="nav-link link link--metis">Skills</a>
@@ -58,9 +60,9 @@
   <div id="particle"></div> <!--Particles.js-->
   <!--"overlay" particles.js-->
   <section id="overlay" class="home">    
-      <div id="home" class="row">
-        <div class="col-5 home__block">
-          <div>
+      <div id="home" class="row animate__animated animate__fadeIn animate__slower">
+        <div class="col-10 col-md-5 home__block flex-column flex-md-row">
+          <div class="text-center text-md-start">
             <p class="home__text mb-0">Hello,
               <br>
               I'm Rodrigo.
@@ -73,14 +75,27 @@
   </section>
 
   <section id="about" class="about row mb-5 pb-5">
-    <div class="about__container col-5 mx-auto">
-      <p class="about__title mt-4">About Me</p>
-    <p class="about__text">I'm 22 years old. I'm a Front End Developer and I've recently studied <strong>Graphic Design</strong> in college.
-      <br>
-        I'm looking forward to taking my very fist steps in the IT professional world, so I can increase my knowledge by learning as much as possible in a <strong>professional environment.</strong>
-        <br>
-        I'm absolutely <strong> eager to learn </strong>and improve my programming skills. I'm really passionate about technology and I enjoy being <strong> curious</strong>. I'm also highly perfectionist, analytical and flexible. I have great soft skills, such as communication and team-oriented personality. I've got a <strong>C1 English level.</strong> I'm fluent in both speaking and writing, as I've been studying it since I was a kid.
+    <p class="about__title mt-4">About Me</p>
+    <div class="about__container col-10 col-md-5 mx-auto wow animate__animated animate__fadeIn animate__slow">
+      <p class="about__text">
+        I'm a Front End Developer with a <strong>Graphic Design background.</strong> I'm now pursuing the Web Development path, but I studied Graphic Design in college for two years, where I developed a <strong>strong aesthetic sense</strong>.        
       </p>
+      <p class="about__text">I'm a complete <strong>pixel perfect enthusiast</strong>, as I have a great attention to detail. I'm really passionate about technology and I enjoy being curious. Furthermore, I'm highly perfectionist yet versatile. </p>
+      <p class="about__text mb-3">I'm looking forward to taking my first steps in the IT professional world, so I can increase my knowledge by <strong>learning</strong> as much as possible in a professional environment.</p>
+      <div class="about__info py-2 mb-1">
+        <div class="d-flex align-items-center">
+          <img src="media/user.svg" alt="Person Icon">
+          <p>22 years old.</p>
+        </div>
+        <div class="d-flex align-items-center">
+          <img src="media/userlanguage.svg" alt="Languages Icon">
+          <p>Spanish & English.</p>
+        </div>
+        <div class="d-flex align-items-center">
+          <img src="media/location.svg" alt="Location Icon">
+          <p>Buenos Aires, Argentina.</p>
+        </div>
+      </div>
       <div class="resumebutton d-flex justify-content-center mb-4">
         <a href="https://drive.google.com/file/d/1azT_Y5TY5igr2l9fu1RWKu-OaBc-jOjU/view" target="_blank">
           <span class="text">My resume</span>
@@ -93,71 +108,73 @@
     </div>
   </section>
 
-  <section id="experience" class="row mt-5 pt-5">
-    <div class="experience col-5 mx-auto">
+  <section id="experience" class="row mt-5">
+    <div class="experience col-10 col-md-5 mx-auto">
       <div class="experience__textHolder">
         <p class="experience__title pt-4">Experience</p>
       </div>
-      <div class="experience__container">        
-          <div id='educationTitle' onclick="showEducation()" class="experience__iconNtitle d-flex align-items-center" style="color: rgb(139, 114, 175);">
-            <img id="educationIcon" src="media/education.svg" alt="Education Icon" style="filter: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%);">
-            <p>Education</p> 
-          </div>
-          <div id='workTitle' onclick="showWork()" class="experience__iconNtitle d-flex align-items-center">
-            <img id="workIcon" src="media/laptop.svg" alt="Work Icon">
-            <p>Work</p>        
-          </div>     
-      </div>
-      <div id="educationTimeline" class="containerTimeline">
-        <div class="timeline-block timeline-block-left">
-          <div class="marker"></div>
-          <div class="timeline-content">
-             <p>React Js</p>
-             <span>Coderhouse</span>
-             <p>Oct-Dec 2021</p>
-          </div>
-       </div>
-        <div class="timeline-block timeline-block-right">
-          <div class="marker"></div>
-          <div class="timeline-content">
-             <p>Javascript</p>
-             <span>Coderhouse</span>
-             <p>Aug-Oct 2021</p>
-          </div>
-       </div>
-        <div class="timeline-block timeline-block-left">
-          <div class="marker"></div>
-          <div class="timeline-content">
-             <p>Web Development</p>
-             <span>Coderhouse</span>
-             <p>May-Jul 2021</p>
-          </div>
-       </div>
-        <div class="timeline-block timeline-block-right">
-          <div class="marker"></div>
-          <div class="timeline-content">
-             <p>Graphic Design</p>
-             <span>Universidad de Morón</span>
-             <p>2018-2021</p>
-             <p class="timeline-text">Third and last year in college. I've completed 22 out of 33 subjects.</p>
-          </div>
-       </div>    
-       <div class="timeline-block timeline-block-left">
-          <div class="marker"></div>
-          <div class="timeline-content">
-             <p>English Cambridge Certificate</p>
-             <span>Private Institute</span>
-             <p>2008-2017</p>
-          </div>
-       </div>    
-       <div class="timeline-block timeline-block-right">
-          <div class="marker"></div>
-          <div class="timeline-content">
-             <p>High School Diploma</p>
-             <span>Private School</span>
-             <p>2011-2017</p>
-          </div>
-       </div>
+      <div class="wow animate__animated animate__fadeInUp animate__slow">
+        <div class="experience__container">
+            <div id='educationTitle' onclick="showEducation()" class="experience__iconNtitle d-flex align-items-center" style="color: rgb(139, 114, 175);">
+              <img id="educationIcon" src="media/education.svg" alt="Education Icon" style="filter: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%);">
+              <p>Education</p>
+            </div>
+            <div id='workTitle' onclick="showWork()" class="experience__iconNtitle d-flex align-items-center">
+              <img id="workIcon" src="media/laptop.svg" alt="Work Icon">
+              <p>Work</p>
+            </div>
+        </div>
+        <div id="educationTimeline" class="containerTimeline">
+          <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <p>React Js</p>
+               <span>Coderhouse</span>
+               <p>Oct-Dec 2021</p>
+            </div>
+         </div>
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <p>Javascript</p>
+               <span>Coderhouse</span>
+               <p>Aug-Oct 2021</p>
+            </div>
+         </div>
+          <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <p>Web Development</p>
+               <span>Coderhouse</span>
+               <p>May-Jul 2021</p>
+            </div>
+         </div>
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <p>Graphic Design</p>
+               <span>Universidad de Morón</span>
+               <p>2019-2021</p>
+               <p class="timeline-text">Third and last year in college. I've completed 22 out of 33 subjects.</p>
+            </div>
+         </div>
+         <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <p>English Cambridge Certificate</p>
+               <span>Private Institute</span>
+               <p>2008-2017</p>
+            </div>
+         </div>
+         <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <p>High School Diploma</p>
+               <span>Private School</span>
+               <p>2011-2017</p>
+            </div>
+         </div>
+        </div>
       </div>
 
 
@@ -191,7 +208,7 @@
     <div class="projects__intro col-12 mx-auto mb-3">
       <p class="projects__title">Featured Projects</p>
     </div>
-    <div class="projects__display col-5 mx-auto mb-5">
+    <div class="projects__display col-10 col-md-5 mx-auto mb-5 wow animate__animated animate__fadeInLeft animate__slow">
       <div class="projects__bothBlocks">
         <div class="projects__blockInfo projects__blockInfo--selfEnd">
           <p class="projects__type">E-commerce</p>
@@ -214,7 +231,7 @@
       </div>
     </div>
     <div class="w-100"></div>
-    <div class="projects__display col-5 mx-auto my-4 text-end">
+    <div class="projects__display col-10 col-md-5 mx-auto my-4 text-end wow animate__animated animate__fadeInRight animate__slow">
       <div class="projects__bothBlocks projects__bothBlocks--reverse">
         <div class="projects__blockImg">
           <img class="projects__image img-fluid" src="media/aviel.jpg" alt="Aviel Home">
@@ -237,7 +254,7 @@
       </div>
     </div>
     <div class="w-100"></div>
-    <div class="projects__display col-5 mx-auto mt-5">
+    <div class="projects__display col-10 col-md-5 mx-auto mt-5 wow animate__animated animate__fadeInLeft animate__slow">
       <div class="projects__bothBlocks">
         <div class="projects__blockInfo projects__blockInfo--selfEnd">
           <p class="projects__type">Football Scouting Agency</p>
@@ -267,7 +284,7 @@
   <section id="skills" class="skills row">
     <div class="skills__block col-7 mx-auto">
       <p class="skills__title mb-5">Skills</p>
-      <div class="skills__container d-flex justify-content-center mx-auto col-lg-8">
+      <div class="skills__container d-flex justify-content-center mx-auto col-lg-8 wow animate__animated animate__fadeIn animate__slow">
         <div class="skills__iconContainers">
           <i class="devicon-html5-plain"></i>
           <p>HTML</p>
@@ -357,6 +374,7 @@
   <script src="js/script.js"></script>
   <script src="js/mouse.js"></script>
   <script src="js/shownavbar.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
 </body>
 

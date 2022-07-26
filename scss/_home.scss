@@ -10,9 +10,10 @@
     &__text{
         font-size: 65px;
         line-height: 72px;
-        font-weight: 300;
+        font-weight: 200;
         &--FrontDev{
             color: $mainColor;
+            font-weight: 300;
         }
     }
     &__logo{

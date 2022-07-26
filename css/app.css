@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Cormorant+Infant:wght@500&family=Kantumruy+Pro:wght@200&family=Libre+Caslon+Text&family=Livvic&family=Quando&family=Thasadith&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -156,7 +156,7 @@ html {
   color: #000;
   text-decoration: none;
   font-size: 1.7rem;
-  font-family: "Poppins", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #nav label a:hover {
@@ -265,11 +265,12 @@ header a:hover {
 .home__text {
   font-size: 65px;
   line-height: 72px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .home__text--FrontDev {
   color: #8b72af;
+  font-weight: 300;
 }
 
 .home__logo {
@@ -405,11 +406,6 @@ header a:hover {
   margin-bottom: 0;
 }
 
-/* #educationTimeline{
-    .timeline-content{
-        padding: 10px 15px;
-    }
-} */
 #workTimeline .timeline-content p {
   font-size: 13.5px;
 }
@@ -456,11 +452,51 @@ header a:hover {
 }
 
 .about__text {
-  font-size: 14px;
+  font-size: 15px;
   text-align: justify;
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   max-width: 90%;
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+}
+
+.about__info p {
+  margin: 0;
+  font-size: 14.5px;
+}
+
+.about__info img {
+  padding-right: 4px;
+  width: 35px;
+  filter: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%);
+}
+
+.about__info div:nth-child(1) img {
+  width: 24px;
+  margin-right: 1px;
+}
+
+.about__info div:nth-child(3) img {
+  width: 32px;
+}
+
+@media (max-width: 768px) {
+  .home__logo {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 667px) {
+  .about__info {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -808,7 +844,7 @@ header a:hover {
 
 .footer {
   position: relative;
-  height: 25vh;
+  height: 19vh;
   text-align: center;
   background-color: #91919157;
 }
