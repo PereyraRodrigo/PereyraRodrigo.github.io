@@ -69,7 +69,7 @@ html {
   z-index: 100;
   width: 200px;
   height: 200px;
-  background: #fff;
+  background: #e1e1e1d6;
   border-radius: 50% 50% 50% 50%;
   transition: 0.5s ease-in-out;
   box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
@@ -113,7 +113,8 @@ html {
 }
 
 #nav label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+  /* box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff; */
+  box-shadow: 90vw 80vw 0 120vw #e1e1e1d6;
   border-radius: 0;
 }
 
@@ -140,7 +141,7 @@ html {
   /* position: absolute; */
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 75%;
   transform: translate(-50%, -50%);
   opacity: 0;
   /* transition: 0.5s 0s ease-in-out; */
@@ -148,6 +149,7 @@ html {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: end;
 }
 
 #nav label a {
@@ -453,7 +455,6 @@ header a:hover {
 
 .about__text {
   font-size: 15px;
-  text-align: justify;
   margin: auto;
   margin-bottom: 14px;
   max-width: 90%;
@@ -480,6 +481,7 @@ header a:hover {
 .about__info div:nth-child(1) img {
   width: 24px;
   margin-right: 1px;
+  margin-bottom: 4px;
 }
 
 .about__info div:nth-child(3) img {
