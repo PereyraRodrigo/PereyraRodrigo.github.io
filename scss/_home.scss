@@ -19,7 +19,8 @@
     &__logo{
         width: 190px;
         max-width: 190px;
-        transition: $hoverTransition;
+        // transition: $hoverTransition;
+        transition: all 0.4s ease-in-out;
         &:hover{
             filter: $filterMainColor;
         }
