@@ -42,7 +42,7 @@
   display: none;
 }
 .containerTimeline {
-  width: 80%;
+  /* width: 80%; */
   padding: 0 0;
   margin: 50px auto;
   position: relative;
@@ -55,7 +55,7 @@
     left: 50%;
     margin-left: -1px;
     width: 1.5px;
-    height: 84%;
+    height: 71%;
     background: #c1c1c1;
     z-index: 1;
   }
@@ -108,6 +108,19 @@
     margin-bottom: 0;
   }
 }
+.timeline-content--waypoint{
+  p:nth-child(1){
+    font-size: 17px !important;
+  }
+  span{
+    font-size: 17px;
+    color: #8b72af;
+  }
+  a{
+    text-decoration: transparent;
+    color: black;
+  }
+}
 #workTimeline{
     .timeline-content p{        
         font-size: 13.5px;
@@ -115,7 +128,7 @@
 }
 .containerTimeline--work{
     &:before {
-        height: 51% !important;
+        height: 73% !important;
       }
 }
 .timeline-text{
@@ -127,6 +140,11 @@
     left: 8px;
     width: 2px;
   }
+  .containerTimeline--work{
+    &:before {
+        height: 82% !important;
+      }
+}
   .timeline-block {
     width: 100%;
     margin-bottom: 30px;

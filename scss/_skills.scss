@@ -23,6 +23,9 @@
             align-items: center;
             transition: $hoverTransition;
         }
+        span{
+            transition: $hoverTransition;
+        }
     }
     &__iconContainers{
         text-align: center;
@@ -35,6 +38,30 @@
             margin-bottom: 0;            
         }
     }
+}
+
+.icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+}
+.serverlessImage{
+    margin-top: 10px;
+    background-image: url(/media/serverless-framework-logo.svg);
+}
+.serverlessImage:hover{
+    filter: invert(52%) sepia(31%) saturate(495%) hue-rotate(223deg) brightness(87%) contrast(96%);
+}
+.serverlessImg{
+    width: 81px;
+    margin-top: 10px;
+    :hover{
+        filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    }
+}
+.serverlessText{
+    margin-top: 9px !important;
 }
 @media (max-width: 768px) {
     .skills{

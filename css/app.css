@@ -336,7 +336,7 @@ header a:hover {
 }
 
 .containerTimeline {
-  width: 80%;
+  /* width: 80%; */
   padding: 0 0;
   margin: 50px auto;
   position: relative;
@@ -351,7 +351,7 @@ header a:hover {
   left: 50%;
   margin-left: -1px;
   width: 1.5px;
-  height: 84%;
+  height: 71%;
   background: #c1c1c1;
   z-index: 1;
 }
@@ -408,12 +408,26 @@ header a:hover {
   margin-bottom: 0;
 }
 
+.timeline-content--waypoint p:nth-child(1) {
+  font-size: 17px !important;
+}
+
+.timeline-content--waypoint span {
+  font-size: 17px;
+  color: #8b72af;
+}
+
+.timeline-content--waypoint a {
+  text-decoration: transparent;
+  color: black;
+}
+
 #workTimeline .timeline-content p {
   font-size: 13.5px;
 }
 
 .containerTimeline--work:before {
-  height: 51% !important;
+  height: 73% !important;
 }
 
 .timeline-text {
@@ -424,6 +438,9 @@ header a:hover {
   .containerTimeline:before {
     left: 8px;
     width: 2px;
+  }
+  .containerTimeline--work:before {
+    height: 82% !important;
   }
   .timeline-block {
     width: 100%;
@@ -808,6 +825,10 @@ header a:hover {
   transition: all 0.3s ease;
 }
 
+.skills__container span {
+  transition: all 0.3s ease;
+}
+
 .skills__iconContainers {
   text-align: center;
 }
@@ -820,6 +841,35 @@ header a:hover {
   font-size: 13px;
   margin-top: 4px;
   margin-bottom: 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+}
+
+.serverlessImage {
+  margin-top: 10px;
+  background-image: url(/media/serverless-framework-logo.svg);
+}
+
+.serverlessImage:hover {
+  filter: invert(52%) sepia(31%) saturate(495%) hue-rotate(223deg) brightness(87%) contrast(96%);
+}
+
+.serverlessImg {
+  width: 81px;
+  margin-top: 10px;
+}
+
+.serverlessImg :hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.serverlessText {
+  margin-top: 9px !important;
 }
 
 @media (max-width: 768px) {
