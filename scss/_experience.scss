@@ -55,12 +55,18 @@
     left: 50%;
     margin-left: -1px;
     width: 1.5px;
-    height: 71%;
+    height: 80%;
     background: #c1c1c1;
     z-index: 1;
   }
 }
-
+@media(max-width:768px){
+  .containerTimeline{
+    &:before{
+      height: 78%;
+    }
+  }
+}
 .timeline-block {
   width: calc(50% + 8px);
   display: flex;
@@ -112,9 +118,21 @@
   p:nth-child(1){
     font-size: 17px !important;
   }
+  p:nth-child(2){
+    color: #8b72af;
+    font-size: 13px;
+  }
+  .role{
+    color: #8b72af;
+    font-size: 13px;
+  }
   span{
     font-size: 17px;
     color: #8b72af;
+  }
+  span:nth-child(2){
+    font-size: 12px;
+    display: block;
   }
   a{
     text-decoration: transparent;
