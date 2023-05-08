@@ -258,6 +258,14 @@ header a:hover {
   filter: invert(50%) sepia(12%) saturate(1413%) hue-rotate(223deg) brightness(94%) contrast(87%);
 }
 
+#educationTitle {
+  cursor: pointer;
+}
+
+#workTitle {
+  cursor: pointer;
+}
+
 .experience {
   background-color: #fff;
   border-radius: 3%;
@@ -316,7 +324,7 @@ header a:hover {
   left: 50%;
   margin-left: -1px;
   width: 1.5px;
-  height: 80%;
+  height: 82%;
   background: #c1c1c1;
   z-index: 1;
 }

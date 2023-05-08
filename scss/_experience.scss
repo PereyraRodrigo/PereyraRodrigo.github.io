@@ -1,3 +1,9 @@
+#educationTitle{
+  cursor: pointer;
+}
+#workTitle{
+  cursor: pointer;
+}
 .experience {
   background-color: $bgColor;
   border-radius: 3%;
@@ -55,7 +61,7 @@
     left: 50%;
     margin-left: -1px;
     width: 1.5px;
-    height: 80%;
+    height: 82%;
     background: #c1c1c1;
     z-index: 1;
   }
