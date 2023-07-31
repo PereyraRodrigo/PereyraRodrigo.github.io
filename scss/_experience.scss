@@ -120,6 +120,29 @@
     margin-bottom: 0;
   }
 }
+.timeline-content-lenovo{
+  a{
+    text-decoration: transparent;
+    color: black;
+  }
+  p:nth-child(1) {
+    margin-bottom: -2px;
+    font-size: 20px !important;
+    font-weight: 500;
+    color: black;
+  }
+  span{
+    font-size: 17px;
+    color: #8b72af;
+  }
+  p{
+    writing-mode: horizontal;
+
+  }
+  .date{
+    display: flex;
+  }
+}
 .timeline-content--waypoint{
   p:nth-child(1){
     font-size: 17px !important;

@@ -383,6 +383,27 @@ header a:hover {
   margin-bottom: 0;
 }
 
+.timeline-content-lenovo a {
+  text-decoration: transparent;
+  color: black;
+}
+.timeline-content-lenovo p:nth-child(1) {
+  margin-bottom: -2px;
+  font-size: 20px !important;
+  font-weight: 500;
+  color: black;
+}
+.timeline-content-lenovo span {
+  font-size: 17px;
+  color: #8b72af;
+}
+.timeline-content-lenovo p {
+  writing-mode: horizontal;
+}
+.timeline-content-lenovo .date {
+  display: flex;
+}
+
 .timeline-content--waypoint p:nth-child(1) {
   font-size: 17px !important;
 }
